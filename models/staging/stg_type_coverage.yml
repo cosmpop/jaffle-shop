@@ -1,0 +1,38 @@
+version: 2
+
+models:
+  - name: stg_type_coverage
+    description: "Staging model for type coverage seed; casts raw CSV strings into typed columns."
+    columns:
+      - name: id
+        description: "Row identifier."
+        tests:
+          - not_null
+          - unique
+
+      - name: int_col
+        tests: [not_null]
+
+      - name: numeric_col
+        tests: [not_null]
+
+      - name: double_col
+        tests: [not_null]
+
+      - name: real_col
+        tests: [not_null]
+
+      - name: bool_col
+        tests: [not_null]
+
+      - name: text_col
+        tests: [not_null]
+
+      - name: varchar_col
+        tests: [not_null]
+
+      - name: date_col
+        tests: [not_null]
+
+      - name: ts_col
+        tests: [not_null]
